@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nirmit Jain</title>
+    <link rel="stylesheet" href="landingPage.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="nav-bar">
+            <a href="./landingPage.html"><div id="nj">
+                nj
+            </div></a>
+           <div id="other-options">
+                <a href="about.html"><div id="about">
+                    About
+                </div></a>
+                <a href="contact.html"><div id="contact">
+                    Contact
+                </div></a>
+                <img id="icon" src="./assets/moon.png">
+           </div>
+        </div>
+        <div id="intro">
+            <h1 id="one"><b>Hello, I'm Nirmit Jain</b></h1>  
+            <h3 id="two"><b>A yapper who codes ideas</b></h3>
+        </div>
+        <div id="information">
+            <div id="left">
+                <div id="content">
+                    <p><b>Im a 19-year old engineering student who is studying computer science and loves to explore new things and create. Trying to strike a balance between personal and profeesional. Get to know me better</b> </p>
+                </div>
+                <a href="about.html"><button type="button" class="btn">More Information →</button></a>
+            </div>
+            <div id="right">
+                    <img src="./assets/pfp_4.jpg" alt="My Picture!">
+            </div>
+        </div>
+    </div>
+    <footer>
+        Made with ❤️ by Nirmit Jain <br>Copyright©2024
+    </footer>
+<script>
+    let icon=document.getElementById("icon");
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src="./assets/sun.png";
+        }
+        else{
+            icon.src="./assets/moon.png";
+        }
+    }
+</script>
+</body>
+</html>
