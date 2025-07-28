@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nirmit Jain</title>
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="nav-bar">
+            <a href="landingPage.html"><div id="nj">
+                nj
+            </div></a>
+           <div id="other-options">
+                <div id="about">
+                    About
+                </div>
+                <a href="contact.html"><div id="contact">
+                    Contact
+                </div></a>
+                <img id="icon" src="./assets/moon.png";>
+           </div>
+        </div>
+        <div id="intro">
+            <h1 id="ctc"><b>About</b></h1>
+        </div>
+        <div id="content">
+            <hr><br>
+            <p><b> A content writer and a data science enthusiast, who is coding his way without caffeine. Apart from coding, public speaking is something draws my attention too.
+                <br>
+                <br>
+                I have built projects of Blockchain, Generative AI, Agentic AI and Web Development. I enjoy working on new problems and debugging. Finding the misspelt syntax or adding ";" or fixing indentation is what I do in my pass time.
+                <br>
+                <br>
+                Laptop is not all where I spend my time, I also do with people. I am a leader, leading a team of 150 kids and teaching them public speaking, at VIT Anchoring Club.</b></p>
+            <br>
+            <hr>
+        </div>
+        <div id="experience">
+            <h2 id="ctc1"><b>Experience<br></b></h2>
+            <div id="GDSC" class="experience-item">
+                <img src="./assets/gdsc logo.png" class="experience-logo">
+                <div class="experience-info">
+                    <p class="main"><b>Google Developers Student Club</b></p>
+                    <p class="time-period"><b>Apr 2024-present</b></p>
+                </div>
+            </div>
+            <div id="SkillGuru" class="experience-item">
+                <img src="./assets/logo_traced (1).jpg" class="experience-logo">
+                <div class="experience-info">
+                    <p class="main"><b>The Skill Guru Foundation</b></p>
+                    <p class="time-period"><b>Aug 2024-Oct 2024</b></p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        Made with ❤️ by Nirmit Jain <br>Copyright©2024
+    </footer>
+    <script>
+        let icon=document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src="./assets/sun.png";
+            }
+            else{
+                icon.src="./assets/moon.png";
+            }
+        }
+    </script>
+</body>
+</html>
